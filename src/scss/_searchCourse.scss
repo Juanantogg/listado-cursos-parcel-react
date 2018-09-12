@@ -1,0 +1,23 @@
+.search {
+  width: 100%;
+  max-width: 600px;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  display: block;
+  background-color: $tercer-color;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: box-shadow linear .4s,
+              color linear .4s,
+              background-color linear .4s;
+  &:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  &:focus {
+    color: #FFF;
+    background-color: $primer-color;
+  }
+}
+

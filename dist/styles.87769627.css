@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #20232A;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); }
+  .header__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
+    .header__title img {
+      height: 100%;
+      -webkit-animation: App-logo-spin linear 5s infinite;
+              animation: App-logo-spin linear 5s infinite;
+      margin-left: -24px; }
+    .header__title div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .header__title h1, .header__title p {
+      margin: 0; }
+
+@-webkit-keyframes App-logo-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes App-logo-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.navigation {
+  width: 100%;
+  top: 70px;
+  position: absolute;
+  background-color: #282C34;
+  display: flex;
+  justify-content: center; }
+  .navigation__mobile {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color linear .4s; }
+    .navigation__mobile:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+    .navigation__mobile span,
+    .navigation__mobile span::before,
+    .navigation__mobile span::after {
+      content: '';
+      display: block;
+      height: 4px;
+      width: 32px;
+      border-radius: 2px;
+      background-color: #fff;
+      position: relative; }
+    .navigation__mobile span::before,
+    .navigation__mobile span::after {
+      position: absolute; }
+    .navigation__mobile span::before {
+      top: -10px; }
+    .navigation__mobile span::after {
+      top: 10px; }
+  .navigation__list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #282C34;
+    position: absolute;
+    top: 48px; }
+  .navigation__item {
+    height: 32px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color linear .4s, color linear .4s;
+    background-color: #f3f3f3; }
+    .navigation__item:hover {
+      background-color: #20232A;
+      color: #FFF; }
+  .navigation__back {
+    display: none; }
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #f3f3f3;
+  min-height: calc(100vh - 118px);
+  transition: top linear .4s, box-shadow linear .4s;
+  padding: 16px; }
+  .courses p {
+    margin: 0; }
+  .courses__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto; }
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  min-width: 273px;
+  width: 350px;
+  padding: 8px;
+  margin: 16px; }
+  .card__name {
+    margin: 0;
+    display: inline-block; }
+  .card__id {
+    float: right; }
+  .card__author {
+    display: block;
+    margin: 8px 0; }
+  .card__active {
+    display: inline; }
+  .card button {
+    float: right;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: -5px;
+    outline: none;
+    color: #FFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow linear .2s; }
+    .card button:hover {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); }
+    .card button:active {
+      box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5); }
+
+.search {
+  width: 100%;
+  max-width: 600px;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  display: block;
+  background-color: #61DAFB;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: box-shadow linear .4s, color linear .4s, background-color linear .4s; }
+  .search:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  .search:focus {
+    color: #FFF;
+    background-color: #282C34; }

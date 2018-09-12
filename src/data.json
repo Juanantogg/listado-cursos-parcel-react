@@ -1,0 +1,12 @@
+[
+  {"curso": "HTML", "id": 1, "activo": true, "autor": "Juan Garcia"},
+  {"curso": "CSS", "id": 2, "activo": false, "autor": "Juan Garcia"},
+  {"curso": "JavaScript", "id": 3, "activo": true, "autor": "Juan Garcia"},
+  {"curso": "Vue.js", "id": 4, "activo": false, "autor": "Juan Garcia"},
+  {"curso": "React.js", "id": 5, "activo": true, "autor": "Juan Garcia"},
+  {"curso": "Node.js", "id": 6, "activo": false, "autor": "Juan Garcia"},
+  {"curso": "MongoDB", "id": 7, "activo": true, "autor": "Juan Garcia"},
+  {"curso": "PHP", "id": 8, "activo": false, "autor": "Juan Garcia"},
+  {"curso": "Laravel", "id": 9, "activo": true, "autor": "Juan Garcia"},
+  {"curso": "MySQL", "id": 10, "activo": false, "autor": "Juan Garcia"}
+]

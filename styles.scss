@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+$primer-color: #282C34;
+$segundo-color: #20232A;
+$tercer-color: #61DAFB;
+
+@import 'src/scss/app';
+@import 'src/scss/header';
+@import 'src/scss/navigation';
+@import 'src/scss/courses';
+@import 'src/scss/cardCourse';
+@import 'src/scss/searchCourse';
+

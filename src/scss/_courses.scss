@@ -1,0 +1,20 @@
+.courses {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgb(243, 243, 243);
+  min-height: calc(100vh - 118px);
+  transition: top linear .4s,
+              box-shadow linear .4s;
+  padding: 16px;
+  p {
+    margin: 0;
+  }
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
